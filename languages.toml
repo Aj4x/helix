@@ -5,6 +5,17 @@ text-width = 180
 formatter = { command = "goimports" }
 roots = ["go.work", "go.mod"]
 
+[[language]]
+name = "c-sharp"
+auto-format = true
+text-width = 180
+roots = ["csproj", "sln"]
+language-servers = ["csharp-ls"]
+
 [language-server.gopls]
 command = "gopls"
 config = { "gofumpt" = true, "local" = "goimports", "semanticTokens" = true, "staticcheck" = true, "verboseOutput" = true, "analyses" = { "fieldalignment" = true, "nilness" = true, unusedparams = true, unusedwrite = true, useany = true }, usePlaceholders = true, completeUnimported = true, hints = { "assignVariableType" = true, "compositeLiteralFields" = true, "compositeLiteralTypes" = true, "constantValues" = true, "functionTypeParameters" = true, "parameterNames" = true, "rangeVariableTypes" = true } }
+
+[language-server.csharp-ls]
+command = "csharp-ls"
+
