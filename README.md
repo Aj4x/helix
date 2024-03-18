@@ -12,7 +12,7 @@ Required dependencies;
 - gopls installed `go install golang.org/x/tools/gopls@latest`
 - goimports installed `go install golang.org/x/tools/cmd/goimports@latest`
 
-# C#
+## C#
 
 Required dependencies;
 
