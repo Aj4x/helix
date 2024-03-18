@@ -1,8 +1,8 @@
 # helix
+
 Helix editor config
 
 ## Languages
-
 
 ## Go
 
