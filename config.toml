@@ -1,4 +1,4 @@
-theme = "onedark"
+theme = "github_dark_tritanopia"
 
 [editor]
 line-number="absolute"
@@ -6,6 +6,7 @@ auto-completion=true
 auto-info=true
 text-width=180
 mouse=false
+bufferline="always"
 
 ## vim keys
 ## https://github.com/LGUG2Z/helix-vim/blob/master/config.toml
