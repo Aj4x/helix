@@ -4,7 +4,7 @@ Helix editor config
 
 ## Languages
 
-## Go
+### Go
 
 Required dependencies;
 
@@ -13,7 +13,7 @@ Required dependencies;
 - goimports installed `go install golang.org/x/tools/cmd/goimports@latest`
 - delve installed `go install github.com/go-delve/delve/cmd/dlv@latest` 
 
-## C#
+### C#
 
 Required dependencies;
 
@@ -23,3 +23,25 @@ Required dependencies;
     we need to install [this](https://github.com/razzmatazz/csharp-language-server)
     as a dotnet tool instead
   - `dotnet tool install --global csharp-ls`
+
+### JSON
+
+Required dependencies;
+
+- npm, unfortunately :(
+- vscode-json-languageserver installed `npm install -g vscode-json-languageserver`
+
+### Jsonnet
+
+Required dependencies;
+
+- [Go](#go) SDK
+- jsonnet install `go install github.com/google/go-jsonnet/cmd/jsonnet@latest`
+- download *jsonnet-language-server* to a location in $PATH from [github project](https://github.com/grafana/jsonnet-language-server)
+
+### YAML
+
+Required dependencies;
+
+- npm, again...
+- yaml-language-server installed `npm install -g yaml-language-server`
