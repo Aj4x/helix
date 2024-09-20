@@ -126,6 +126,7 @@ comment-token = "//"
 block-comment-tokens = { start = "/*", end = "*/" }
 indent = { tab-width = 2, unit = "  " }
 language-servers = [ "jsonnet-language-server" ]
+formatter = { command = "jsonnetfmt" }
 
 [language-server.jsonnet-language-server]
 command = "jsonnet-language-server"
@@ -214,7 +215,7 @@ scope = "source.md"
 injection-regex = "md|markdown"
 file-types = ["md", "markdown", "mdx", "mkd", "mkdn", "mdwn", "mdown", "markdn", "mdtxt", "mdtext", "workbook", { glob = "PULLREQ_EDITMSG" }]
 roots = [".marksman.toml"]
-language-servers = [ "marksman", "markdown-oxide" ]
+language-servers = [ "marksman", "markdown-oxide", "mdpls" ]
 indent = { tab-width = 2, unit = "  " }
 block-comment-tokens = { start = "<!--", end = "-->" }
 
@@ -239,3 +240,7 @@ args = [ "server" ]
 
 [language-server.markdown-oxide]
 command = "markdown-oxide"
+
+[language-server.mdpls]
+command = "mdpls"
+config = { markdown.preview.auto = false }

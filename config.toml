@@ -8,3 +8,32 @@ text-width=180
 mouse=false
 bufferline="always"
 
+[keys.normal]
+C-S-o = [ ":lsp-workspace-command Open Preview" ]
+
+[keys.normal.space]
+q = ":buffer-close"
+
+[keys.normal.D]
+t = ":lsp-workspace-command today"
+m = ":lsp-workspace-command tomorrow"
+y = ":lsp-workspace-command yesterday"
+
+[keys.normal.D.n]
+1 = ":lsp-workspace-command next monday"
+2 = ":lsp-workspace-command next tuesday"
+3 = ":lsp-workspace-command next wednesday"
+4 = ":lsp-workspace-command next thursday"
+5 = ":lsp-workspace-command next friday"
+6 = ":lsp-workspace-command next saturday"
+7 = ":lsp-workspace-command next sunday"
+
+[keys.normal.D.l]
+1 = ":lsp-workspace-command last monday"
+2 = ":lsp-workspace-command last tuesday"
+3 = ":lsp-workspace-command last wednesday"
+4 = ":lsp-workspace-command last thursday"
+5 = ":lsp-workspace-command last friday"
+6 = ":lsp-workspace-command last saturday"
+7 = ":lsp-workspace-command last sunday"
+
