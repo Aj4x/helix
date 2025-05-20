@@ -37,3 +37,5 @@ y = ":lsp-workspace-command yesterday"
 6 = ":lsp-workspace-command last saturday"
 7 = ":lsp-workspace-command last sunday"
 
+[keys.normal.space.space]
+m = ":sh echo %{filename}"
